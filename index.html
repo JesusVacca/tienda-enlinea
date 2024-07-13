@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sabor de Hogar</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="alerta" id="alerta">Producto agregado al carrito</div>
+    <a href="#banner" class="arriba" id="arriba"><img src="img/icon/arrow-up.svg" alt="Ir arriba"></a>
+    <header class="header" id="header">
+        <div class="logo">
+            <img src="img/icon/shop.svg" alt="imagen de la tienda">
+            <h1>Sabor de Hogar</h1>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#"><span>Inicio</span></a></li>
+                <li style="display: none;"><a href="#"><span>Promociones</span></a></li>
+                <li><a href="#productos"><span>Productos</span></a></li>
+                <li><a href="#"><span>Contacto</span></a></li>
+                <li><a href="#"><span>Acerca de</span></a></li>
+                <li><a href="#"><span>Ingresar</span></a></li>
+                <li class="perfil" id="perfil">
+                    <a href="#">
+                        <span>Tu perfil</span>
+                        <img src="img/icon/caret-right-fill.svg" alt="open" id="open__perfil__items">
+                    </a>
+                    <div class="perfil__items" id="perfil__items">
+                        <a href="#">Ver perfil</a>
+                        <a href="#">Cerrar sesión</a>
+                    </div>
+                </li>
+                <li title="Tus compras"><a href="pages/carrito.html"><img src="img/icon/bag.svg" alt="carrito de compra"></a></li>
+            </ul>
+        </nav>
+        <button type="button" class="hamburguesa" id="hamburguesa"><span></span><span></span><span></span></button>
+    </header>
+    <div class="banner" id="banner">
+        <h3>
+            Bienvenidos a <Strong>Sabor de Hogar</Strong>
+        </h3>
+        <p>¿Quieres conocer los beneficios de ser miembro?</p>
+        <a href="#">Crear una cuenta</a>
+    </div>
+    <div class="seccion productos" id="productos">
+        <h2> Productos disponibles</h2>
+        <div class="seccion-contenedor">
+            
+            <div class="item">
+                <p class="boton_producto">
+                    <button type="button" class="btn__izquierda"><img src="img/icon/arrow-left.svg" alt=""></button>
+                    <span class="contador__producto">1</span>
+                    <button type="button" class="btn__derecha"><img src="img/icon/arrow-right.svg" alt=""></button>
+                </p>
+                <img src="img/productos/item_1.jfif" alt="acite de cocina" class="item_img">
+                <div class="descripcion">
+                    <p class="codigo__producto">#00013</p>
+                    <p class="nombre__producto">Aceite cocina  600ml</p>
+                    <p>$ <span class="precio__producto">5000</span></p>
+                    
+                </div>
+                <button type="button" class = "btn__add">Agregar al carro</button>
+            </div>
+            <div class="item">
+                <p class="boton_producto">
+                    <button type="button" class="btn__izquierda"><img src="img/icon/arrow-left.svg" alt=""></button>
+                    <span class="contador__producto">1</span>
+                    <button type="button" class="btn__derecha"><img src="img/icon/arrow-right.svg" alt=""></button>
+                </p>
+                <img src="img/productos/item_2.jfif" alt="acite de cocina" class="item_img">
+                <div class="descripcion">
+                    <p class="codigo__producto">#00012</p>
+                    <p class="nombre__producto">Arroz Diana 500gr</p>
+                    <p>$ <span class="precio__producto">3000</span></p>
+                    
+                </div>
+                <button type="button" class = "btn__add">Agregar al carro</button>
+            </div>
+            <div class="item">
+                <p class="boton_producto">
+                    <button type="button" class="btn__izquierda"><img src="img/icon/arrow-left.svg" alt=""></button>
+                    <span class="contador__producto">1</span>
+                    <button type="button" class="btn__derecha"><img src="img/icon/arrow-right.svg" alt=""></button>
+                </p>
+                <img src="img/productos/item_4.jfif" alt="acite de cocina" class="item_img">
+                <div class="descripcion">
+                    <p class="codigo__producto">#00014</p>
+                    <p class="nombre__producto">Huvos blancos 30u</p>
+                    <p>$ <span class="precio__producto">13000</span></p>
+                    
+                </div>
+                <button type="button" class = "btn__add">Agregar al carro</button>
+            </div>
+            <div class="item">
+                <p class="boton_producto">
+                    <button type="button" class="btn__izquierda"><img src="img/icon/arrow-left.svg" alt=""></button>
+                    <span class="contador__producto">1</span>
+                    <button type="button" class="btn__derecha"><img src="img/icon/arrow-right.svg" alt=""></button>
+                </p>
+                <img src="img/productos/item_3.jfif" alt="acite de cocina" class="item_img">
+                <div class="descripcion">
+                    <p class="codigo__producto">#00011</p>
+                    <p class="nombre__producto">Atún Tuny 142gr</p>
+                    <p>$ <span class="precio__producto">8000</span></p>
+                    
+                </div>
+                <button type="button" class = "btn__add">Agregar al carro</button>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="copy">
+            <p>&copy; <strong>Sabor de Hogar</strong></p>
+            <p><strong>Todos los derechos reservados</strong></p>
+        </div>
+    </div>
+    <script src="js/models.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
