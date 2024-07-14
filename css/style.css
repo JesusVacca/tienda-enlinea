@@ -21,6 +21,13 @@ body, html{
     scrollbar-width: thin;
     scroll-behavior: smooth;
 }
+h3{
+    font-size: 20px;
+    color: var(--walnut-brown);
+    text-align: center;
+    padding: .4em;
+}
+hr{border:1px solid var(--khaki);}
 h1{font-size: 25px;}
 h2{
     position: relative;
@@ -419,6 +426,79 @@ h2::after{
 }
 .carrito .btn__compra img{
     margin-left: .3em;
+}
+
+/* ESTILOS DE LOS FORMULARIOS */
+.formularios{
+    width: 100%;
+    height: calc(90vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+.formularios .form{
+    padding: .5em;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.26);
+    border-radius: .3em;
+    animation: translate .2s ease-out;
+}
+.formularios .form.register{display: none;}
+.formularios .row{
+    display: flex;
+    flex-direction: column;
+    padding: .2em;
+    margin-bottom: .5em;
+}
+.formularios label{
+    font-size: 17px;
+    color: var(--gunmetal);
+    font-weight: bold;
+}
+.formularios input{
+    width: 300px;
+    height: 30px;
+    border: 1px solid var(--khaki);
+    text-align: center;
+    font-size: 16px;
+    border-radius: .2em;
+    outline: none;
+}
+.formularios input:focus{
+    border-color: var(--walnut-brown);
+}
+.formularios input[type=submit]{
+    background: var(--walnut-brown);
+    color: var(--almond);
+    cursor: pointer;
+    transition: all .2s ease-out;
+    border: none;
+}
+.formularios input[type=submit]:hover{
+    opacity: .8;
+}
+.formularios .row img{
+    width: 150px;
+    aspect-ratio: 1/1;
+}
+.formularios .row.icon{
+    justify-content: center;
+    align-items: center;
+}
+.formularios .row.enlaces{
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.formularios a{
+    font-size: 12px;
+    display: block;
+    text-decoration: none;
+    color: var(--gunmetal);
+    transition: all .2s ease-out;
+}
+.formularios a:hover{
+    color: var(--khaki);
 }
 /* Estilos del pie de pagina */
 .footer{
