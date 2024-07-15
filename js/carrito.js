@@ -50,6 +50,8 @@ window.addEventListener('DOMContentLoaded',function(){
             const img2 = document.createElement('img');
             const p1 = document.createElement('p');
             const p2 = document.createElement('p');
+            const p3 = document.createElement('p');
+            const p4 = document.createElement('p');
             const span = document.createElement('span');
         
         
@@ -63,14 +65,16 @@ window.addEventListener('DOMContentLoaded',function(){
             span.className = 'precio';
             img1.className = 'img';
             p1.innerHTML = producto.nombre;
-            p2.innerHTML = '$';
-            span.innerHTML = producto.precio;
+            p2.innerHTML = 'Sub total $';
+            p3.innerHTML = `Unidades ${producto.cantidad}`;
+            p4.innerHTML = `Valor $ ${producto.precio}`;
+            span.innerHTML = producto.total;
             img1.alt = producto.nombre;
             img1.src = producto.src;
             img2.alt = 'quitar_producto';
             
             p2.append(span);
-            descripcion.append(p1,p2);
+            descripcion.append(p1,p4,p3,p2);
             quitarProducto.append(img2)
             itemCarrito.append(img1,descripcion,quitarProducto)
             document.getElementById('carrito__contenedor').append(itemCarrito);
